@@ -4,7 +4,7 @@ a:hover, a.rawr:hover, .genre.hover, .genre.hover a {color: white; text-decorati
 a.rawr {color: #df1301;}
 ol {list-style: none;}
 .covers li {float:left; margin-right: 10px; margin-bottom: 10px;}
-.nav {color: #555; font-size: .75em; background-color: #eee;}
+.nav {color: #555; font-size: .75em; background-color: #eee; margin-bottom: 20px;}
 .nav a {color:#333;}
 .nav a:hover {color:#fff;}
 .nav a.scramble {color: white; text-decoration: none; background-color: #df1301;}
