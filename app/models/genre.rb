@@ -11,7 +11,8 @@ class Genre < ActiveRecord::Base
       (?:[^\s]+\s\&\s[^\s]+) |
       (?:on\sBlu\-ray) |
       (?:set\sin\s(?:the\s)?[^\s]+(?:\s(?:Times|Era|Ages|America))?) |
-      (?:TV\s[^\s]+) |
+      (?:Kids'\sTV) |
+      (?:(?:North|East|South|West|Southeast)\s[^\s]+) |
       (?:Kung\sFu) |
       (?:Hidden\s[^\s]+) |
       (?:Best\s[^\s]+) |
@@ -21,6 +22,7 @@ class Genre < ActiveRecord::Base
       (?:Film\sFestival) |
       (?:[\d]+th\s[^\s]+) |
       (?:Hong\sKong) |
+      (?:Fairy\sTales?) |
       (?:based\son\s
         (?:a\s)?
         (?:[Rr]eal\s)?
