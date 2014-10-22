@@ -1,4 +1,4 @@
-body {background-color: #f5f5f5; color: #aaa; font-family: "clavo",serif; font-size: 1.5em; padding-bottom: 40px;}
+body {background-color: #f5f5f5; color: #aaa; font-family: "clavo",serif; font-size: 1.5em; padding-bottom: 40px; font-weight:300;}
 a {color: #18BDC8; text-decoration:none; }
 a:hover, a.rawr:hover, .genre.hover, .genre.hover a {color: white; text-decoration: none; background-color: #df1301; }
 a.rawr {color: #df1301;}
