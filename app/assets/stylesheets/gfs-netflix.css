@@ -3,7 +3,7 @@ a {color: #18BDC8; text-decoration:none; }
 a:hover, a.rawr:hover, .genre.hover, .genre.hover a {color: white; text-decoration: none; background-color: #df1301; }
 a.rawr {color: #df1301;}
 ol {list-style: none;}
-.covers li {float:left; margin-right: 10px; margin-bottom: 10px;}
+.covers li {float:left; width:180px; height:240px; margin-right: 5px; margin-bottom: 10px;}
 .nav {color: #555; font-size: .75em; background-color: #eee;}
 .nav a {color:#333;}
 .nav a:hover {color:#fff;}
