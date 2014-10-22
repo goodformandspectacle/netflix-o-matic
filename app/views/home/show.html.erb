@@ -1,5 +1,5 @@
 <ol>
 	<% @genres.each do |genre| %>
-		<li><%= genre.name %> <%= link_to '→', genre %></li>
+    <%= render genre %>
 	<% end %>
 </ol>
