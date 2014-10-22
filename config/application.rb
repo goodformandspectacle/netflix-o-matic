@@ -11,7 +11,7 @@ Bundler.require(*Rails.groups)
 module NetflixOMatic
   class Application < Rails::Application
 
-    config.assets.precompile += %w( gfs-netflix.css )
+    config.assets.precompile += %w( gfs-netflix.css layout.css skeleton.css )
     config.assets.version = '1.0'
 
     config.session_store :cookie_store, key: '_netflix-o-matic_session'
