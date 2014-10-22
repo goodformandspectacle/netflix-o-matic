@@ -1,37 +1,52 @@
 <% content_for :page_title, "About Netflix-o-matic" %>
  
- <div class="offset-by-two">
+ <div class="twelve columns offset-by-two">
 
-  <h1 style="margin-top:20px;">Humans are watching more <a href="http://netflix.com">Netflix</a> than ever. We'd like to help.</h1>
-  <p>At <a href="http://goodformandspectacle.com">Good, Form & Spectacle</a> we're interested in what happens when you take away search boxes on websites. Turns out it can be pretty fun, especially when you have well-constructed classifications that lead you to movies you didn't know you wanted to watch.</p>
-  <p>Here's the story of our Netflix Genre Explorer...</p>
-  
-  <h2>December 2, 2013</h2>
-  <p><a href="http://www.alexismadrigal.com/">Alexis Madrigal</a> tweets his curiosity about Netflix "microgenres".</p>
-  <p>
-    <a href="https://twitter.com/alexismadrigal/status/407644471392608256"><%= image_tag "alexis-tweet1.gif" %></a>
-    <a href="https://twitter.com/alexismadrigal/status/407646810035871744"><%= image_tag "alexis-tweet2.gif" %></a></p>
-  <p>And <a href="https://docs.google.com/spreadsheet/ccc?key=0AlC_pAJFqGnHdDdhUWUzSV9mU2RmUW11Q0Rub0RrWHc&usp=sharing#gid=0">lists them in a Google doc</a>.</p>
-  
-  <h2>December 5, 2013</h2>
-  <p>Noodling around one evening, I discover a magic URL thanks to Mr. Madrigal's sleuthing. If you're a member on Netflix, you can bounce around genres just by changing the number part of the URL...</p>
-  <p><a href="https://twitter.com/george08/status/408813451847299073" title="but, this is my private account"><%= image_tag "glo-tweet.gif" %></a></p>
-  <p>Within moments, Paul Mison and Nick Sweeney join in and start to try to gather genres. </p>
-  <ul>
-    <li><a href="https://gist.github.com/blech/7818890">https://gist.github.com/blech/7818890</a></li>
-    <li>And later: <a href="https://gist.github.com/nicksweeney/7852705">https://gist.github.com/nicksweeney/7852705</a></li>
-  </ul>
-  
-  <h2>January 2, 2014</h2>
-  <p>Madrigal publishes in The Atlantic. <a href="http://www.theatlantic.com/technology/archive/2014/01/how-netflix-reverse-engineered-hollywood/282679/"><em>How Netflix Reverse Engineered Hollywood</em></a> included a "Netflix genre generator" and lots of interesting stuff about how he pulled everything apart.</p>
-  <blockquote>
-    <p>"We've now spent several weeks understanding, analyzing, and reverse-engineering how Netflix's vocabulary and grammar work. We've broken down its most popular descriptions, and counted its most popular actors and directors. </p>
-    <p>"To my (and Netflix's) knowledge, no one outside the company has ever assembled this data before.</p>
-    <p>"What emerged from the work is this conclusion: Netflix has meticulously analyzed and tagged every movie and TV show imaginable. They possess a stockpile of data about Hollywood entertainment that is absolutely unprecedented. The genres that I scraped and that we caricature above are just the surface manifestation of this deeper database."</p>
-  </blockquote>
-  <p>So, before we knew it, Madrigal's research had become a full-blown article. Darn! I was left feeling that this "caricature" in the article was just that, and not actually useful at all to people looking for something to watch. <em>Could we make something useful?</em> My interest is not dismemberment, but revelation and fun.</p>  
-  <p>Since the article came out, we've each looked at this when we've had time. There's a server and search, a lot of poking at big spreadsheets, and getting together when we could. Designs started popping out mid-September, and here we are.</p>
-  
-  <p>We hope you enjoy it! <a href="/">Scramble</a>?</p>
+<h1>About Netflix-O-Matic</h1>
+
+<p>This project started in December of 2013 as I tailed <a href="https://twitter.com/alexismadrigal/status/407644471392608256">tweets</a> <a href="https://twitter.com/alexismadrigal/status/407646810035871744">about</a> Netflix "micro-genres" by <a href="http://www.alexismadrigal.com/">Alexis Madrigal</a>. He was preparing to write an article in the Atlantic. One of his tweets contained a URL which I started poking at, just changing the numbers at the end, to see what would come up. Turns out it exposed a bunch of Netflix genres I’d never encountered before. I tweeted that link.</p>
+
+<p>My friends, <a href="http://github.com/blech">Paul Mison</a> and <a href="http://github.com/nicksweeney">Nick Sweeney</a>, in California and North Carolina respectively, jumped in and started slurping up as many genres as they could find, and movies associated with them. <em>Note that this is a limited set.</em> After a pretty short time we had a database of genres and movies. Yeah!</p>
+
+<p>That’s about as far as we got before Mr. Madrigal published his <a href="http://www.theatlantic.com/technology/archive/2014/01/how-netflix-reverse-engineered-hollywood/282679/">How Netflix Reverse-Engineered Hollywood</a> article. He and his team created a widget to let viewers construct their own more or less arbitrary genre names, thanks to the deconstructive work Madrigal had done studying the structure of the genres. </p>
+
+<blockquote>
+<p>"We've now spent several weeks understanding, analyzing, and reverse-engineering how Netflix's vocabulary and grammar work. We've broken down its most popular descriptions, and counted its most popular actors and directors.</p>
+<p>"To my (and Netflix's) knowledge, no one outside the company has ever assembled this data before.</p>
+<p>"What emerged from the work is this conclusion: Netflix has meticulously analyzed and tagged every movie and TV show imaginable. They possess a stockpile of data about Hollywood entertainment that is absolutely unprecedented. The genres that I scraped and that we caricature above are just the surface manifestation of this deeper database."</p>
+</blockquote>
+
+<p>While it was an interesting exposition, I personally found the resulting widget more anatomical than useful, and thought it might be more fun to make a way to surf around the genres themselves, as they exist, because they’re fun all on their own — <em>“Exciting Sword & Sandal from the 1960s” = YES!!</em> - and could probably help find a movie you’d never even heard of.</p>
+
+<p>Fast forward to October 2014, London. You put me, <a href="http://frankieroberto.com">Frankie Roberto</a> and <a href="http://iamdanw.com">Dan Williams</a> in a <a href="http://thegreenhouselondon.com">greenhouse</a> for a day, and out pops <strong>Netflix-O-Matic</strong>, a fun toy to explore thousands of Netflix genres! </p>
+
+<p>It’s hopefully quite simple, at least for <em>Version 1</em>.</p>
+
+<p>When you see a genre, it’ll look like this:</p>
+
+<strong>Witty Romantic Dysfunctional-Family Movies —></strong>
+
+<p>I thought it might be fun to split this one up into its constituent parts, as well as having a way to look at all the movies in that genre, so there’s a slightly clunky way* to surf both into and out of a single genre. Cutting them up can take you to:</p>
+
+<ul>
+<li>Witty</li>
+<li>Romantic</li>
+<li>Dysfunctional-Family, or the whole genre</li>
+<li>Witty Romantic Dysfunctional-Family Movies (by clicking the arrow at the end)</li>
+</ul>
+
+<p>Thanks to Frankie massaging a big regex file all afternoon, we’ve got some nice things-that-make-sense stuck together, like “WORD & WORD” should be one link… for example, Sword & Sandal, or “SET IN …” grabs set in Europe or set in Ancient Times.</p>
+
+<p>So, it’s rough, but fun, we hope. We also put a link through to Netflix itself once you get to a movie so if you’re a subscriber, you can watch something you’ve discovered practically by accident. Bear in mind that it’s not an exact copy of all the movies available at any time on Netflix. It might be better to just think of it as a genre browser in that regard. But, you might find fun stuff you wouldn’t have thought to search for.</p>
+
+<p>* If you have an idea for a nice way to do that double-barreled navigation to either the sum or its parts of a genre, please do let us know with a tweet to <a href="http://twitter.com/goodformand">@goodformand</a>.</p>
+
+<p>It’s a Ruby/Postgres app running on Heroku. I used a handy CSS library called Skeleton that helped bash out a responsive view quickly too. </p>
+
+<p><em>Thanks again to my co-conspirators, Paul, Nick, Frankie and Dan for helping pull this toy together. It was also fun to hang out in the new <a href="http://thegreenhouselondon.com">Greenhouse N16</a> space in London. Thanks to Rob and Tara for having us for the day.</em></p>
+	
+<p>We hope you enjoy it!</p>
+
+<p><a href="/" class="scramble">Scramble</a>!</p>
   
 </div>
