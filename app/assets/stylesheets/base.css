@@ -52,7 +52,7 @@
 		color: #111111;
 		font-weight: bold; }
 	h1 a, h2 a, h3 a, { font-weight: inherit; }
-	h1, h2, h3 { font-size: 36px; line-height: 84px; }
+	h1, h2, h3 { font-size: 36px; margin-bottom: 40px; }
 
 	em { font-style: italic; }
 	strong { font-weight: bold;}
