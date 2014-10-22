@@ -4,10 +4,10 @@ class Genre < ActiveRecord::Base
   def words
     name.scan(/(?:
       (?:from\sthe\s[\d]+s) | 
-      (?:directed\sby\s[^\s]+\s[^\s]+) |
+      (?:\sby\s[^\s]+\s[^\s]+) |
       (?:for\sages\s[\d]+\sto\s[\d]+) |
-      (?:about\s[^\s]+) |
-      (?:starring\s[^\s]+(?:\s[^\s]+)*) |
+      (?:about\s(?:Trucks,\sTrains\s&\sPlanes|[^\s]+\s\&\s[^\s]+|[^\s]+)) |
+      (?:(?:(?:directed|created)\sby|starring)\s[^\s]+(?:\s[^\s]+)*) |
       (?:[^\s]+\s\&\s[^\s]+) |
       (?:on\sBlu\-ray) |
       (?:set\sin\s(?:the\s)?[^\s]+(?:\s(?:Times|Era|Ages|America))?) |
@@ -16,6 +16,7 @@ class Genre < ActiveRecord::Base
       (?:Kung\sFu) |
       (?:Hidden\s[^\s]+) |
       (?:Best\s[^\s]+) |
+      (?:for\sHopeless\sRomantics) |
       (?:Road\sTrip) |
       (?:Golden\sGlobe) |
       (?:[Ff]eaturing\s(?:a\s)?(?:[Ss]trong\s)?(?:[Ff]emale\s)?[^\s]+) |
