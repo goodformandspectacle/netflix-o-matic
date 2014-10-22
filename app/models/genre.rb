@@ -28,7 +28,7 @@ class Genre < ActiveRecord::Base
         (?:a\s)?
         (?:[Rr]eal\s)?
         [^\s]+
-        (?:\s(?:[Bb]books|[Ll]iterature))?
+        (?:\s(?:[Bb]books|[Ll]iterature|[Gg]ame))?
         (?:\sby\s[^\s]+(?:\s[A-Z][^\s]+)*)?
       ) |
       (?:[^\s]+)
