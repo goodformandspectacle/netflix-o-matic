@@ -12,4 +12,4 @@ ol.covers {list-style: none; margin-top:10px;}
 .pad {padding-top:18px;}
 .by p {text-align:right;}
 
-a.genre-link {font-weight:bold;color: white; text-decoration: none; background-color: #df1301;padding:3px;}
+a.genre-link {font-weight:bolder;color: white; text-decoration: none; background-color: #df1301;padding-left:3px; padding-right:3px;}
