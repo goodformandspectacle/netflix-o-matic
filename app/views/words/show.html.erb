@@ -3,6 +3,6 @@
 
 <ol>
 	<% @genres.each do |genre| %>
-		<%= render genre %>
+		<%= render genre, current_word: @word %>
 	<% end %>
 </ol>

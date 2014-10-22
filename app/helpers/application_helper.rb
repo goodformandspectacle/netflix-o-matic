@@ -1,11 +1,11 @@
 module ApplicationHelper
 
-  def words_links(words)
+  def words_links(words, current_word = nil)
 
     words.collect do |word|
 
-      if word == "Movies"
-        "Movies"
+      if word == "Movies"  || word == current_word
+        word
       else
         link_to(word, word_path(word), class: 'word')
       end
