@@ -9,6 +9,7 @@ class Genre < ActiveRecord::Base
       (?:starring\s[^\s]+(?:\s[^\s]+)*) |
       (?:[^\s]+\s\&\s[^\s]+) |
       (?:on\sBlu\-ray) |
+      (?:Kung\sFu) |
       (?:based\son\s
         (?:a\s)?
         (?:[Rr]eal\s)?
