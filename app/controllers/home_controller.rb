@@ -2,7 +2,7 @@ class HomeController < ApplicationController
 
 
   def show
-    @genres = Genre.order("random()").limit(10)
+    @genres = Genre.order("random()").where("movies_count > 0").limit(20)
   end
 
 end

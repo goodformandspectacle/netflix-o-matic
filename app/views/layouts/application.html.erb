@@ -23,6 +23,10 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "bb4cd9ea-5610-4b49-b168-e70dae80da83", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
 </head>
 <body>
 
@@ -31,15 +35,22 @@
 			<a href="http://goodformandspectacle.com" title="Brought to you by Good, Form & Spectacle"><%= image_tag "gfns-butterfly.png", size: "60x60" %></a>
 		</div>
 		<div class="twelve columns pad">
-			<%= link_to root_path do %><b>Netflix-O-Matic</b><% end %>
+			<%= link_to root_path, class: 'scramble' do %><b>Netflix-O-Matic</b><% end %>
 			&nbsp;&nbsp;&nbsp;&nbsp;
-      <%= link_to "About", about_path %> &bull; <%= link_to "Scramble", root_path, class: 'scramble' %>
+      <%= link_to "About", about_path %>
 
 		</div>
 	</div>
 	<div class="container">
 
     <%= yield %>
+
+	<hr>
+	
+	<span class='st_facebook_large' displayText='Facebook'></span>
+	<span class='st_twitter_large' displayText='Tweet'></span>
+	<span class='st_tumblr_large' displayText='Tumblr'></span>
+	<span class='st_email_large' displayText='Email'></span>	
 
     </div>
 

@@ -1,1 +1,11 @@
-<h1>Movie page</h1>
+<h1><%= @movie.name %></h1>
+
+<%= image_tag @movie.cover_url %>
+
+<p>in genres</p>
+
+<ol>
+  <% @movie.genres.order(:name).where("movies_count > 4").each do |genre| %>
+    <li><%= link_to genre.name, genre_path(genre) %></li>
+  <% end %>
+</ol>

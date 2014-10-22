@@ -3,7 +3,13 @@
 <% if @genre.movies_count > 0 %>
 	
 	<ol class="covers">
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
+    <% @genre.movies.each do |movie| %>
+  		<li>
+        <%= link_to movie_path(movie) do %> 
+          <%= image_tag movie.cover_url %>
+        <% end %>
+      </li>
+    <% end %>
 	</ol>
 
 	<div style="clear: both;"><%= link_to "View on Netflix", netflix_genre_url(@genre.id) %></div>
