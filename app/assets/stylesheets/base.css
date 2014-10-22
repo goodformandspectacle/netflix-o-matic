@@ -60,7 +60,7 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-weight: 500;
+		font-weight: normal;
 		margin-top: 20px; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {  }
 	h1 { font-size: 40px; line-height: 50px; margin-bottom: 32px;}
