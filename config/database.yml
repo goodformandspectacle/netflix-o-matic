@@ -13,4 +13,3 @@ development:
 production:
   <<: *default
   database: netflix-o-matic_production
-  username: netflix-o-matic
