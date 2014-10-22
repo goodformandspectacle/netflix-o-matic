@@ -8,7 +8,7 @@ ol.covers {list-style: none; margin-top:10px;}
 .nav {color: #555; font-size: .75em; background-color: #eee;}
 .nav a {color:#333;}
 .nav a:hover {color:#fff;}
-.nav a.scramble {color: white; text-decoration: none; background-color: #df1301; padding-left: 3px; padding-right: 3px;}
+a.scramble {color: white; text-decoration: none; background-color: #df1301; padding-left: 3px; padding-right: 3px;}
 .pad {padding-top:18px;}
 .by p {text-align:right;}
 
