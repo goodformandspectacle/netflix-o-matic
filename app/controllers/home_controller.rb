@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
 
 
-  # def show
-
-  # end
+  def show
+    @genres = Genre.order("random()").limit(10)
+  end
 
 end
