@@ -1,24 +1,15 @@
 <h1><%= @genre.name %></h1>
 
+<% if @genre.movies_count > 0 %>
+	
 	<ol class="covers">
 		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-6.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
-		<li><a href="to netflix"><img src="http://cdn-0.nflximg.com/us/boxshots/large/70181716.jpg" /></a></li>
 	</ol>
+
+	<div style="clear: both;"><%= link_to "View on Netflix", netflix_genre_url(@genre.id) %></div>
+
+<% else %>
+
+	<p>No movies :(</p>
+
+<% end %>

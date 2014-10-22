@@ -1,18 +1,46 @@
-<html>
-  <head>
-    <title>Netflix Explorer by Good, Form &amp; Spectacle</title>
-    <meta name="creators" value="George Oates, Paul Mison, Nick Sweeney">
-    <meta name="description" value="Brought to you by Good, Form &amp; Spectacle, the Netflix-Genrenator is a way to find the darker corners of the Netflix genre universe.">
-    <%= stylesheet_link_tag 'gfs-netflix.css' %>
-  </head>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-  <body>
+	<meta charset="utf-8">
+	<title>Netflix-O-Matic by Good, Form & Spectacle</title>
+	<meta name="description" content="A fun toy to help you find Netflix movies you've never heard of">
+	<meta name="author" content="George Oates, Nick Sweeney, Frankie Roberto, Dan Williams, Paul Mison">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <%= javascript_include_tag "application" %>  
+
+    <%= stylesheet_link_tag 'base.css' %>
+    <%= stylesheet_link_tag 'gfs-netflix.css' %>
+    <%= stylesheet_link_tag 'skeleton.css' %>
+    <%= stylesheet_link_tag 'layout.css' %>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="container nav">
+		<div class="two column">
+			<a href="http://goodformandspectacle.com" title="Brought to you by Good, Form & Spectacle"><%= image_tag "gfns-butterfly.png", size: "60x60" %></a>
+		</div>
+		<div class="twelve columns pad">
+			<b>Netflix-O-Matic</b>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= link_to "About", about_path %> &bull; <%= link_to "Scramble", root_path, class: 'scramble' %>
+
+		</div>
+	</div>
+	<div class="container">
 
     <%= yield %>
 
-    <div class="logo">
-      <a href="http://goodformandspectacle.com" title="Brought to you by Good, Form &amp; Spectacle"><img src="https://pbs.twimg.com/profile_images/479746008834772992/7lMTtP39_400x400.png" /></a>
-      <div class="nav"><a href="/about">About</a> | <a href="/">Scramble</a></div>
     </div>
 
   </body>
