@@ -1,6 +1,6 @@
 body {background-color: #f5f5f5; color: #888; font-family: "Garamond", Georgia, serif;  font-size: 2em;}
 a {color: #18BDC8; text-decoration:none; }
-a:hover, a.rawr:hover {color: white; text-decoration: none; background-color: #df1301; }
+a:hover, a.rawr:hover, .genre.hover, .genre.hover a {color: white; text-decoration: none; background-color: #df1301; }
 a.rawr {color: #df1301;}
 ol {list-style: none;}
 .covers li {float:left; margin-right: 10px; margin-bottom: 10px;}
