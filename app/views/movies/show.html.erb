@@ -2,9 +2,9 @@
 
 <%= image_tag @movie.cover_url %>
 
-<h3><a href="#">View on Netflix</a> (You need to be logged in there.)</h3>
+<p><b><a href="#">View on Netflix</a></b> (You need to be logged in there.)</p>
 
-<p><%= @movie.name %> is in these genres:</p>
+<h2><%= @movie.name %> is in these genres:</h2>
 
 <ol>
   <% @movie.genres.order(:name).where("movies_count > 4").each do |genre| %>
