@@ -13,6 +13,14 @@ class Genre < ActiveRecord::Base
       (?:set\sin\s(?:the\s)?[^\s]+(?:\s(?:Times|Era|Ages|America))?) |
       (?:TV\s[^\s]+) |
       (?:Kung\sFu) |
+      (?:Hidden\s[^\s]+) |
+      (?:Best\s[^\s]+) |
+      (?:Road\sTrip) |
+      (?:Golden\sGlobe) |
+      (?:[Ff]eaturing\s(?:a\s)?(?:[Ss]trong\s)?(?:[Ff]emale\s)?[^\s]+) |
+      (?:Film\sFestival) |
+      (?:[\d]+th\s[^\s]+) |
+      (?:Hong\sKong) |
       (?:based\son\s
         (?:a\s)?
         (?:[Rr]eal\s)?
