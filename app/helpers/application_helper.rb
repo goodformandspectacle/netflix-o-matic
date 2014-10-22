@@ -14,4 +14,8 @@ module ApplicationHelper
 
   end
 
+  def netflix_genre_url(netflix_genre_id)
+    "http://www2.netflix.com/WiAltGenre?agid=#{netflix_genre_id}"
+  end
+
 end
