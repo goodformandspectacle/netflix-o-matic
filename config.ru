@@ -1,14 +1,4 @@
-# encoding: UTF-8
-require 'rack'
-require  'rack/contrib'
+# This file is used by Rack-based servers to start the application.
 
-use Rack::Deflater
-
-use Rack::Static,
-  :urls => ['/'],
-  :root => "design",
-  :index => 'about.html',
-  :header_rules => [[:all, {'Cache-Control' => 'public, max-age=1'}]]
-
-
-run lambda { |env| }
+require ::File.expand_path('../config/environment',  __FILE__)
+run Rails.application
