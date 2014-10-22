@@ -2,7 +2,7 @@
 
 <%= image_tag @movie.cover_url %>
 
-<p>in genres</p>
+<h2>In these genres</h2>
 
 <ol>
   <% @movie.genres.order(:name).where("movies_count > 4").each do |genre| %>
