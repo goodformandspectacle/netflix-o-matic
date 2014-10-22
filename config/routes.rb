@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resource :about, only: [:show], controller: 'about'
 
+  resources :words, only: [:show], controller: 'words'
+
   root 'home#show'
 
 
