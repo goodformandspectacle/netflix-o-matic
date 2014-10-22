@@ -6,6 +6,6 @@
 
 <ol>
   <% @movie.genres.order(:name).where("movies_count > 4").each do |genre| %>
-    <li><%= link_to genre.name, genre_path(genre) %></li>
+    <%= render genre, current_word: nil %>
   <% end %>
 </ol>
