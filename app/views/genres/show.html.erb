@@ -1,3 +1,4 @@
+<% content_for :page_title, @genre.name + " on Netflix" %>
 <h1><%= words_links(@genre.words) %></h1>
 
 <% if @genre.movies_count > 0 %>
