@@ -49,10 +49,10 @@
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
-		color: #181818;
-		font-weight: normal; }
+		color: #111111;
+		font-weight: bold; }
 	h1 a, h2 a, h3 a, { font-weight: inherit; }
-	h1, h2, h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+	h1, h2, h3 { font-size: 36px; line-height: 84px; }
 
 	em { font-style: italic; }
 	strong { font-weight: bold;}
