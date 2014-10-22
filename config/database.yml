@@ -9,6 +9,8 @@ default: &default
 development:
   <<: *default
   database: netflixomatic
+  username: postgres
+  password: postgres
 
 production:
   <<: *default
