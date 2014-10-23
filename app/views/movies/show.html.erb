@@ -10,7 +10,7 @@
 <p><%= @movie.name %> is in these genres:</p>
 
 <ol>
-  <% @movie.genres.order(:name).where("movies_count > 4").each do |genre| %>
+  <% @genres.each do |genre| %>
     <%= render genre, current_word: nil %>
   <% end %>
 </ol>
