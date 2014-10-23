@@ -4,9 +4,9 @@
 
 <h1>About Netflix-O-Matic</h1>
 
-<p class="lead">Netflix-O-Matic is a fun toy you can use to find something new to watch. It was built by <a href="http://goodformandspectacle.com">Good, Form & Spectacle</a>, a London design firm focussed on cultural heritage projects.</p>
+<p class="lead">Netflix-O-Matic is a fun toy you can use to find something new to watch online. It was built by <a href="http://goodformandspectacle.com">Good, Form & Spectacle</a>, a London design firm focussed on cultural heritage projects.</p>
 
-<p>This project started in December of 2013 as I tailed <a href="https://twitter.com/alexismadrigal/status/407644471392608256">tweets</a> <a href="https://twitter.com/alexismadrigal/status/407646810035871744">about</a> Netflix "micro-genres" by <a href="http://www.alexismadrigal.com/">Alexis Madrigal</a>. He was preparing to write an article in the Atlantic. One of his tweets contained a URL which I started poking at, just changing the numbers at the end, to see what would come up. Turns out it exposed a bunch of Netflix genres I’d never encountered before. I tweeted that link.</p>
+<p>This project started in December of 2013 as I tailed <a href="https://twitter.com/alexismadrigal/status/407644471392608256">tweets</a> <a href="https://twitter.com/alexismadrigal/status/407646810035871744">about</a> Netflix "micro-genres" by <a href="http://www.alexismadrigal.com/">Alexis Madrigal</a>. He was preparing to write an article in <a href="http://www.theatlantic.com">The Atlantic Monthly</a>. One of his tweets contained a URL which I started poking at, just changing the numbers at the end, to see what would come up. Turns out it exposed a bunch of Netflix genres I’d never encountered before. I tweeted that link.</p>
 
 <p>My friends, <a href="http://github.com/blech">Paul Mison</a> and <a href="http://github.com/nicksweeney">Nick Sweeney</a>, in California and North Carolina respectively, jumped in and started slurping up as many genres as they could find, and movies associated with them. <em>Note that this is a limited set.</em> After a pretty short time we had a database of genres and movies. Yeah!</p>
 
@@ -18,7 +18,7 @@
 <p>"What emerged from the work is this conclusion: Netflix has meticulously analyzed and tagged every movie and TV show imaginable. They possess a stockpile of data about Hollywood entertainment that is absolutely unprecedented. The genres that I scraped and that we caricature above are just the surface manifestation of this deeper database."</p>
 </blockquote>
 
-<p>While it was an interesting exposition, I personally found the resulting widget more anatomical than useful, and thought it might be more fun to make a way to surf around the genres themselves, as they exist, because they’re fun all on their own — <em>“Exciting Sword & Sandal from the 1960s” = YES!!</em> - and could probably help find a movie you’d never even heard of.</p>
+<p>While it was an interesting exposition, I personally found the resulting widget more anatomical than useful, and thought it might be more fun to make a way to surf around the genres themselves, as they exist, because they’re fun all on their own — <em><a href="http://netflixomatic.goodformandspectacle.com/genres/90605" class="scramble">Exciting Sword & Sandal Action Sci-Fi & Fantasy</a> = YES!!</em> - and could probably help find a movie you’d never even heard of.</p>
 
 <p>Fast forward to October 2014, London. You put me, <a href="http://frankieroberto.com">Frankie Roberto</a> and <a href="http://iamdanw.com">Dan Williams</a> in a <a href="http://thegreenhouselondon.com">greenhouse</a> for a day, and out pops <strong>Netflix-O-Matic</strong>, a fun toy to explore thousands of <a href="http://netflix.com">Netflix</a> genres! </p>
 
@@ -26,11 +26,11 @@
 
 <p>When you see a genre, it’ll look like this:</p>
 
-<p><strong>Witty Romantic Dysfunctional-Family Movies &rarr;</strong></p>
+<p><strong>Slapstick Comedies from the 1980s &rarr;</strong></p>
 
 <p>I thought it might be fun to split this one up into its constituent parts, as well as having a way to look at all the movies in that genre, so there’s a slightly clunky way* to surf both into and out of a single genre. Cutting them up can take you to:</p>
 
-<p>[ <strong>Witty</strong> ][ <strong>Romantic</strong> ][ <strong>Dysfunctional-Family</strong> ], or the whole genre [ <strong>Witty Romantic Dysfunctional-Family Movies</strong> ] (view by clicking the <strong>&rarr;</strong> at the end)</p>
+<p>[ <strong><a href="http://netflixomatic.goodformandspectacle.com/words/slapstick" class="scramble">Slapstick</a></strong> ][ <strong><a href="http://netflixomatic.goodformandspectacle.com/words/comedies" class="scramble">Comedies</a></strong> ][ <strong><a href="http://netflixomatic.goodformandspectacle.com/words/from%20the%201980s" class="scramble">from the 1980s</a></strong> ], or the whole genre [ <strong>Slapstick Comedies from the 1980s</strong> ] (view by clicking the <strong>&rarr;</strong> at the end)</p>
 
 <p>Thanks to Frankie massaging a big <a href="https://github.com/goodformandspectacle/netflix-o-matic/blob/master/app/models/genre.rb">regex</a> file all afternoon, we’ve got some nice things-that-make-sense stuck together, like “WORD & WORD” should be one link… for example, Sword & Sandal, or “SET IN …” grabs set in Europe or set in Ancient Times.</p>
 
@@ -40,10 +40,13 @@
 
 <p>It’s a Ruby/Postgres app running on Heroku. I used a handy CSS library called <a href="http://getskeleton.com">Skeleton</a> that helped bash out a responsive view quickly too. We were also sorry to discover that Netflix has decided to <a href="http://developer.netflix.com/blog/read/Retiring_the_Netflix_Public_API">close down its public API</a> on November 14, 2014, otherwise we might have tried to make more.</p>
 
-<p><em>Thanks again to my co-conspirators, Paul, Nick, Frankie and Dan for helping pull this toy together. It was also fun to hang out in the new <a href="http://thegreenhouselondon.com">Greenhouse N16</a> space in London. Thanks to Rob and Tara for having us for the day.</em></p>
+<p>Thanks again to my co-conspirators, Paul, Nick, Frankie and Dan for helping pull this toy together. It was also fun to hang out in the new <a href="http://thegreenhouselondon.com">Greenhouse N16</a> space in London. Thanks to Rob and Tara for having us for the day.</p>
 	
 <p>We hope you enjoy it!</p>
 
-<p><a href="/" class="scramble">Scramble</a>!</p>
+<p>Cheers,<br />
+<em>George Oates</em></p>
+
+<p><a href="/" class="scramble">Scramble</a>?</p>
   
 </div>
