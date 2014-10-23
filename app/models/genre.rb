@@ -8,12 +8,13 @@ class Genre < ActiveRecord::Base
       (?:for\sages\s[\d]+\sto\s[\d]+) |
       (?:about\s(?:Trucks,\sTrains\s&\sPlanes|[^\s]+\s\&\s[^\s]+|[^\s]+)) |
       (?:(?:(?:directed|created)\sby|starring)\s[^\s]+(?:\s[^\s]+)*) |
-      (?:[^\s]+\s\&\s[^\s]+) |
+      (?:(?:Comic\s)?[^\s]+\s(?:\&|and)\s(?:Serial\s)?[^\s]+) |
       (?:on\sBlu\-ray) |
       (?:set\sin\s(?:the\s)?[^\s]+(?:\s(?:Times|Era|Ages|America))?) |
       (?:Kids'\sTV) |
       (?:(?:North|East|South|West|Southeast)\s[^\s]+) |
       (?:Kung\sFu) |
+      (?:(?:Mixed\s)?Martial\s[^\s]+) |
       (?:Hidden\s[^\s]+) |
       (?:Best\s[^\s]+) |
       (?:for\sHopeless\sRomantics) |
@@ -23,6 +24,13 @@ class Genre < ActiveRecord::Base
       (?:Film\sFestival) |
       (?:[\d]+th\s[^\s]+) |
       (?:Hong\sKong) |
+      (?:Time\sTravel) |
+      (?:Race\sAgainst\sTime) |
+      (?:High\sSchool) |
+      (?:Girl\sPower) |
+      (?:Stand\-up\sComedy) |
+      (?:Conspiracy\sTheory) |
+      (?:Period\sPieces) |
       (?:Fairy\sTales?) |
       (?:based\son\s
         (?:a\s)?
