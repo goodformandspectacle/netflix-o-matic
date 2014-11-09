@@ -124,3 +124,11 @@ function addLoadEvent(func) {
 }
 
 addLoadEvent(setupGenreLinkEvents);
+
+addLoadEvent( function() {
+  // test to see if movie-name element is present
+  // this only appears on the movies#show view 
+  if (document.getElementById("movie-name")) {
+    createIMDbLink();
+  }
+});
