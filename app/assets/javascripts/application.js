@@ -110,4 +110,17 @@ function createIMDbLink() {
   }
 }
 
+// onload que function
+function addLoadEvent(func) {
+  var old_onload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      old_onload();
+      func();
+    };
+  }
+}
+
 document.addEventListener('DOMContentLoaded', setupGenreLinkEvents)
