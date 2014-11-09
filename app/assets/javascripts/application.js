@@ -68,8 +68,10 @@ function createIMDbLink() {
   var request = getHTTPObject();
   if (request) {
     request.open( "GET", omdb_url, true);
+    console.log("Making request for " + omdb_url);
     request.onreadystatechange = function () {
       if (request.readyState == 4) {
+        console.log("response recieved:");
         // parse JSON response
         var movie = JSON.parse(request.responseText);
 
