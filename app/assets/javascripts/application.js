@@ -123,4 +123,4 @@ function addLoadEvent(func) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', setupGenreLinkEvents)
+addLoadEvent(setupGenreLinkEvents);
