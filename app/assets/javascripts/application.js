@@ -5,7 +5,7 @@ function addHoverClassToParent() {
 }
 
 function removeHoverClassFromParent() {
-  this.parentElement.classList.remove('hover')  
+  this.parentElement.classList.remove('hover')
 }
 
 function setupGenreLinkEvents() {
@@ -19,6 +19,8 @@ function setupGenreLinkEvents() {
     genre_links[i].addEventListener('mouseleave', removeHoverClassFromParent)
 
   };
+}
+
 // handy function for inserting content after elements
 function insertAfter(newElement,targetElement) {
   var parent = targetElement.parentNode;
@@ -106,8 +108,6 @@ function createIMDbLink() {
   } else {
     console.log('Sorry, your browser doesn’t support XMLHttpRequest');
   }
-}
-
 }
 
 document.addEventListener('DOMContentLoaded', setupGenreLinkEvents)
