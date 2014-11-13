@@ -1,9 +1,12 @@
 <% content_for :page_title, @movie.name + " on Netflix-o-matic" %>
-<h1><%= @movie.name %></h1>
+<h1 id="movie-name"><%= @movie.name %></h1>
 
 <%= image_tag @movie.cover_url %>
 
-<h3><a href="http://www.netflix.com/search/<%= @movie.name %>">View on Netflix</a> <small>(You need to be logged in there.)</small></h3>
+<h3 id="netflix-link">
+  <a href="http://www.netflix.com/search/<%= @movie.name %>">View on Netflix</a>
+  <small>(You need to be logged in there.)</small>
+</h3>
 
 <hr>
 

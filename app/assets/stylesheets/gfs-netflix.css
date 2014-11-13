@@ -13,3 +13,5 @@ a.scramble {color: white; text-decoration: none; background-color: #df1301; padd
 .by p {text-align:right;}
 
 a.genre-link {font-weight:bolder;color: white; text-decoration: none; background-color: #df1301;padding-left:3px; padding-right:3px;}
+
+cite {font-style: italic;}
